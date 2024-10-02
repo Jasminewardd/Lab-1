@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1 class="logo">Jasmine's Portfolio</h1>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+            <nav class="page-links" id="page-links">
+                <a href="Home.html">Home</a>
+                <a href="Education.html">Education</a>
+                <a href="Experience.html">Experience</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="exp-title">Experience</h1>
+        <div class="experience">
+            <div class="experience-right">
+                <h2>Janitor</h2>
+                    <p>Bushaga (Karlstad, Sweden)</p>
+                    <p>Jul 2024 - Present</p>
+                <h2>Product development intern (480 hours)</h2>
+                    <p>Somerville (Siam) Co., Ltd. (Bangkok, Thailand)</p>
+                    <p>Nov 2023 - Mar 2024</p>
+            </div>
+            <div class="experience-left">
+                <h2>Kitchen assistance at Retirement homes & Schools</h2>
+                    <p>Hammaro Kommun (Karlstad, Sweden)</p>
+                    <p>Aug 2019 - Nov 2020</p>
+                <h2>Landscaper</h2>
+                    <p>KBAB (Karlstad, Sweden)</p>
+                    <p>Jul 2018 - Jul 2018, Jun 2017 - Jul 2017</p>
+            </div>
+        </div>   
+    <hr>
+        <div class="other-experinace">
+            <h1 class="exp-title">Other Experience</h1>
+            <div class="other-exp-text">
+                <div class="africa-container">
+                    <h2>Project Africa</h2>
+                    <p>The project is about preventing stereotype of African countries and increase tourism for the opportunity of development by presenting our experience to different organisations. This has given me skills in teamwork, being outside my comfort zone and about other culture.</p>
+                    <img src="img/project-africa.jpg" alt="group of people form project africa" class="africa-img">
+                </div>
+                <div class="sos-container">
+                    <h2>Scholars of Sustenance (SOS)</h2>
+                    <p>SOS includes volunteer work for rescueing food surplus and give to people in need. When volunteering it opened my eyes on different ways to help people and to turn waste into something valuble.</p>
+                    <img src="img/sos.JPG" alt="jasmine holding a sign of SOS with two other people at a orphanage surrounded of kids" class="img-sos">
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <h1 class="connect-title">Connect with me</h1>
+        <a href="Email.html" target="_blank">            
+            <img src="img/email.jpg" alt="Email contact" class="icon">
+        </a> 
+       <a href="https://www.linkedin.com/in/jasminewardd" target="_blank">            
+            <img src="img/linkedin.png" alt="linkedin Profile" class="icon">
+        </a> 
+        <a href="https://github.com/Jasminewardd" target="_blank">            
+            <img src="img/Github.png" alt="Github Profile" class="icon">
+        </a> 
+    </footer>
+    <p class="copyright">&copy; Jasmine's portfolio</p>
+       <script>
+    document.getElementById('hamburger').addEventListener('click', function () {
+var menu = document.getElementById('page-links');
+menu.classList.toggle('show-menu'); // Toggle a class instead of manipulating inline styles
+});
+</script>
+
+
+</body>
+</html>

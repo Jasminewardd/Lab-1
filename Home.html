@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1 class="logo">Jasmine's Portfolio</h1>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+            <nav class="page-links" id="page-links">
+                <a href="Home.html">Home</a>
+                <a href="Education.html">Education</a>
+                <a href="Experience.html">Experience</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main-content">
+            <h1>Hi, I am Jasmine</h1>
+            <p id="welcome-text">Welcome to my digital CV!</p>
+            <img src="img/profilepic.jpg" alt="Picture of Jasmine" id="profileimg">
+        </div>
+        <article class="about-me">
+            <h1>About me</h1>
+            <p>I developed this website to show my skills in a new hobby I have developed which is programming. This website will be a mix of a CV and cover letter but in a more creative way. As a person I like being creative and working with details but also being able to add my skills from my bachelor's degree in business administration. My diverse educational background and experience during my internship at Somerville Siam Co., Ltd, have equipped me with unique skills and is what you will learn more about me with this website.</p>
+        </article>
+    </main>
+    
+    <footer class="footer">
+        <h1>Connect with me</h1>
+        <a href="Email.html" target="_blank">            
+            <img src="img/email.jpg" alt="Email contact" class="icon">
+        </a> 
+       <a href="https://www.linkedin.com/in/jasminewardd" target="_blank">            
+            <img src="img/linkedin.png" alt="linkedin Profile" class="icon">
+        </a> 
+        <a href="https://github.com/Jasminewardd" target="_blank">            
+            <img src="img/Github.png" alt="Github Profile" class="icon">
+        </a> 
+    </footer>
+    <p class="copyright">&copy; Jasmine's portfolio</p>
+
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function () {
+        var menu = document.getElementById('page-links');
+        menu.classList.toggle('show-menu'); // Toggle a class instead of manipulating inline styles
+        });
+    </script>
+</body>
+</html>

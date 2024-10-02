@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1 class="logo">Jasmine's Portfolio</h1>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+            <nav class="page-links" id="page-links">
+                <a href="Home.html">Home</a>
+                <a href="Education.html">Education</a>
+                <a href="Experience.html">Experience</a>
+            </nav>
+        </div>
+    </header>
+  <div class="form-container">
+    <h1>Contact me!</h1>
+    <form class="form-text">
+        <label for="fname">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Your name.." required>
+       
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Your email.." required>
+
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" placeholder="Write your message here" style="height: 200px;" required></textarea>
+
+        <input type="submit" value="Submit" id="submit-btn">
+    </form>
+  </div>
+  <p class="copyright">&copy; Jasmine's portfolio</p>
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function () {
+        var menu = document.getElementById('page-links');
+        menu.classList.toggle('show-menu');
+        });
+
+        document.getElementById("submit-btn").addEventListener("click", function (event) {
+        event.preventDefault();
+
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+
+        const subject = encodeURIComponent("Contact Form Submission");
+        const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
+        const mailtoLink = `mailto:jasmine.ward0102@gmail.com?subject=${subject}&body=${body}`;
+
+        window.location.href = mailtoLink;
+        });
+    </script>
+</body>
+</html>

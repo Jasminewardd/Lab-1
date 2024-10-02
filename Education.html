@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1 class="logo">Jasmine's Portfolio</h1>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+            <nav class="page-links" id="page-links">
+                <a href="Home.html">Home</a>
+                <a href="Education.html">Education</a>
+                <a href="Experience.html">Experience</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1 class="education-title">Education Background</h1>
+        <ul class="education-list">
+            <li><a href="#international-business-management">Bachelor Degree of International Business Management - Stamford International University (Bangkok, Thailand)</a></li>
+            <li><a href="#economics">Economic degree in highschool - Klara Teoretiska Gymnasium (Karlstad, Sweden)</a></li>
+            <li><a href="#extra-courses">Extra Courses</a></li>
+        </ul>
+        <hr>
+            <div id="international-business-management">  
+                <h2 class="major-title">International Business Management</h2>
+            </div> 
+                <div class="major-container">
+                    <div class="major-right">  
+                        <p>I have recently finished my coursework during my studies at Stamford International University in Bangkok, Thailand. My major is under Business Administrative but with the focus on International Business Managment. I will attend my graduation ceremony on December 15th and graduate with a GPA of 3.71. I also achieved a certificate in International Trade which was my deep focus in the degree.</p>
+                    <h3>Skills I have developed are:</h3>
+                        <ul class="skills-list">
+                            <li>Cross Culture Managment & Communication</li>
+                            <li>Team Work</li>
+                            <li>Global Marketing</li>
+                            <li>International Trade</li>
+                            <li>Global Supply Chain Managemnet</li>
+                            <li>Leadership and Management</li>
+                            <li>Analysing Markets & Industries</li>
+                            <li>Analytical and Critical Thinking</li>
+                            <li>Project Management</li>
+                        </ul>
+                </div>
+                <div class="major-left">
+                    <img src="img/Stamford2.jpg" alt="stamford international university building">
+                </div>
+            </div>
+            <div id="economics">
+                <h2 class="major-title">Economics</h2>
+            </div>
+                <div class="major-container">
+                    <div class="major-right">
+                        <p>During my high school year, I enrolled in an economic major with a focus in marketing. The main skill I bring with me from my high school years are from the course Ung Företagsamhet (UF), translated to Young Enterprise. In the course I sold metal straws with one classmate. This gave my the experience of being an entrepreneur and understanding the steps from starting a company and selling goods to close the company. My main responsibility in the company, which was called “Reusable Straws” , was to handle the accounting in the company.</p>
+                    <h3>Skills I have developed are:</h3>
+                        <ul class="skills-list">
+                            <li>Accounting</li>
+                            <li>Marketing Stratagies</li>
+                            <li>Market Research & Analysis</li>
+                            <li>Brand Management</li>
+                            <li>CSR</li>
+                            <li>Business Law</li>
+                            <li>Entrepreneurship</li>
+                        </ul>
+                </div>
+                    <div class="major-left">
+                            <img src="img/UF.jpg" alt="jasmine selling metal straws in a booth" class="UF-img">
+                    </div>
+            </div>
+        <hr>
+        <h2 id="extra-courses">Extra courses</h2>
+        <h3>Programming</h3>
+        <ul>
+            <li>Introduction to Programming in Python</li>
+            <li>JavaScript for webdevelopment</li>
+        </ul>
+    </main>
+    
+    <footer class="footer">
+        <h1 class="connect-title">Connect with me</h1>
+        <a href="Email.html" target="_blank">            
+            <img src="img/email.jpg" alt="Email contact" class="icon">
+        </a> 
+       <a href="https://www.linkedin.com/in/jasminewardd" target="_blank">            
+            <img src="img/linkedin.png" alt="linkedin Profile" class="icon">
+        </a> 
+        <a href="https://github.com/Jasminewardd" target="_blank">            
+            <img src="img/Github.png" alt="Github Profile" class="icon">
+        </a> 
+    </footer>
+    <p class="copyright">&copy; Jasmine's portfolio</p>
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function () {
+        var menu = document.getElementById('page-links');
+        menu.classList.toggle('show-menu'); 
+        });
+    </script>
+</body>
+</html>
